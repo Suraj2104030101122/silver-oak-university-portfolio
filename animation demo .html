@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        animation demo
+    </title>
+    <style type="text/css">
+
+div{
+                height:200px;
+                width:200px;
+                transition:3s;
+                font-size:25px;
+                font-weight:bold;
+                color:rgb(5, 5, 5);
+                background-color:Red
+        }
+        #animation1:hover
+            {
+                -webkit-transform:translate(100px,100px);
+                   -moz-transform:translate(100px,100px);
+                    -ms-transform:translate(100px,100px);
+                     -o-transform:translate(100px,100px);
+                        transform:translate(100px,100px);
+                      background-color:rgb(187, 255, 0);
+                      color:rgb(38, 0, 255); 
+            }
+            #animation2:hover
+            {
+                -webkit-transform:scale(1.5,0.5);
+                   -moz-transform:scale(1.5,0.5);
+                    -ms-transform:scale(1.5,0.5);
+                     -o-transform:scale(1.5,0.5);
+                        transform:scale(1.5,0.5);
+                      background-color:Blue;
+                      color:Yellow; 
+            }
+
+            #animation3:hover
+            {
+                opacity: 0.5;
+
+            }
+            #animation4:hover
+            {
+                background-color: rgb(68, 47, 255);
+            }
+            #animation5:hover{
+				-webkit-transform:rotate3d(1,1,0,360deg);
+                   -moz-transform:rotate3d(1,1,0,360deg);
+                    -ms-transform:rotate3d(1,1,0,360deg);
+                     -o-transform:rotate3d(1,1,0,360deg);
+                       transform:rotate3d(1,1,0,360deg);
+                      background-color:Blue;
+                      color:rgb(255, 0, 179); 
+            }
+
+    </style>
+</head>
+<body>
+    <center><div id="animation1" style="background-color:blueviolet" >animation1 traslate</div> <hr></center>
+<div id="animation2"style="background-color:yellow">animation1 scaler</div> <hr>
+<div id="animation3" style="background-color:green">animation1 opacity</div> <hr>
+<div id="animation4">animation1 RGBA</div> <hr>
+<div id="animation5">animation1 rotate</div> <hr>
+</body>
+</html>
