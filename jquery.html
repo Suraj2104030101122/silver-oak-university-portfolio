@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #night{
+            height: 80vh;
+            width: 80%;
+            background-color: aqua;
+            border: solid 2px rgb(0, 0, 0);
+        }
+        .button{
+            height: 10%;
+            width: 5%;
+           
+            border-radius: 50%;
+            margin-left: 20px;
+            margin-top:10px ;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        /* array*/
+        var cars=["BMW","HONDA","KIA"];
+        document.write("<hr/><b/><u/>"+cars[0]);
+        document.write("<hr/><b/>"+cars[1]);
+        document.write("<b/><hr/>"+cars[2]+"<hr/>");
+  /*function*/
+  var laptop={
+    brand:"lenovo",
+    RAM:"8GB",
+    proccesor:"ryzen7"
+  }
+  document.write('<br/>'+laptop.brand)
+  document.write('<br/>'+laptop.RAM)
+  document.write('<br/>'+laptop.proccesor)
+
+  function myFunction() {
+   document.getElementById("night").style.backgroundImage = "url(dark.jpg)"
+   document.getElementById("but").style.background= 'white'
+   document.getElementById("but").style.color= 'black';
+}
+function myfunction() {
+   document.getElementById("night").style.backgroundImage = "url(normal.jpg)"
+
+   document.getElementById("but").style.background= 'black'
+   document.getElementById("but").style.color= 'white';
+}
+
+    </script>
+    <div id="night">
+
+        <button type="button" class="button" id="but"
+        ondblclick="myfunction()"
+        onclick="myFunction()">
+    dark mod</button>
+    </div>
+
+</body>
+</html>
